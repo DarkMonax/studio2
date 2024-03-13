@@ -1,0 +1,93 @@
+:root {
+  --primary-text-color: #212121;
+  --second-text-color: #757575;
+  --accent-color: #2196f3;
+
+  --primary-button-color: #2196f3;
+  --primary-btn-bg-color: #f5f4fa;
+  --secondary-btn-bg-color: #2196f3;
+  --secondary-btn-text-color: #ffffff;
+
+  --primary-logo-color: #2196f3;
+  --secondary-logo-color: #000000;
+  --secondary-logo-footer-color: #ffffff;
+
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+
+  --color-link: rgba(255, 255, 255, 0.6);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-text-color);
+}
+
+.body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.hero-btn {
+  background-color: var(--primary-button-color);
+  color: var(--secondary-btn-text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: var(--second-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.list-btn {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-btn-color);
+}
+
+.list-btn:hover,
+.list-btn:focus {
+  color: var(--secondary-btn-text-color);
+  background-color: var(--secondary-btn-bg-color);
+}
+
+.link {
+  color: var(--primary-text-color);
+}
+
+.contact a {
+  color: var(--second-text-color);
+}
+
+.section-title {
+  color: var(--primary-text-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.contact a:hover,
+.contact a:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+) .logo {
+  color: var(--primary-logo-color);
+}
+.studio {
+  color: var(--secondary-logo-color);
+}
+.footer .studio {
+  color: var(--secondary-logo-footer-color);
+}

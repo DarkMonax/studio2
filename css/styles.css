@@ -1,21 +1,31 @@
 :root {
   --primary-text-color: #212121;
   --second-text-color: #757575;
+  --third-text-color: #ffffff;
+
   --accent-color: #2196f3;
 
-  --primary-button-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+
   --primary-btn-bg-color: #f5f4fa;
-  --secondary-btn-bg-color: #2196f3;
-  --secondary-btn-text-color: #ffffff;
 
   --primary-logo-color: #2196f3;
   --secondary-logo-color: #000000;
   --secondary-logo-footer-color: #ffffff;
 
-  --primary-bg-color: #ffffff;
-  --secondary-bg-color: #2f303a;
+  --color-footer-mt: rgba(255, 255, 255, 0.6);
 
-  --color-link: rgba(255, 255, 255, 0.6);
+  --font-family: 'Roboto', sans-serif;
+  --second-family: 'Raleway', sans-serif;
+  --third-family: 'Oleo Script', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
 }
 
 h1,
@@ -27,21 +37,60 @@ h6 {
   color: var(--primary-text-color);
 }
 
-.body {
-  background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
-}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-.hero-btn {
-  background-color: var(--primary-button-color);
-  color: var(--secondary-btn-text-color);
-}
-
-a {
-  text-decoration: none;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 p {
+  color: var(--second-text-color);
+}
+.logo {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+
+  color: var(--primary-logo-color);
+}
+
+.studio {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+
+  color: var(--secondary-logo-color);
+}
+
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1.19;
+
+  color: var(--primary-text-color);
+
+  text-decoration: none;
+}
+
+.contact a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.02em;
+
   color: var(--second-text-color);
 }
 
@@ -49,45 +98,121 @@ p {
   list-style: none;
 }
 
-.list-btn {
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--third-text-color);
+}
+
+.list-btn,
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  cursor: pointer;
   color: var(--primary-text-color);
-  background-color: var(--secondary-btn-color);
+
+  background-color: var(--primary-btn-bg-color);
 }
 
-.list-btn:hover,
-.list-btn:focus {
-  color: var(--secondary-btn-text-color);
-  background-color: var(--secondary-btn-bg-color);
-}
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-.link {
   color: var(--primary-text-color);
 }
 
-.contact a {
+.feature-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 
 .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+
   color: var(--primary-text-color);
 }
+.team-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 3%;
+  text-align: center;
 
-.site-nav a:hover,
-.site-nav a:focus,
-.contact a:hover,
-.contact a:focus {
-  color: var(--accent-color);
+  color: var(--primary-text-color);
 }
+.team-text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 3%;
+  text-align: center;
+
+  color: var(--second-text-color);
+}
+
+.list-btn:hover,
+.list-btn:focus,
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact a:hover,
+.contact a:focus,
 .site-nav .link.current {
   color: var(--accent-color);
 }
 
-) .logo {
-  color: var(--primary-logo-color);
+.footer-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--third-text-color);
 }
-.studio {
-  color: var(--secondary-logo-color);
+/* .footer-mail,
+.footer-tell  */
+
+.contact-footer > a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-footer-mt);
 }
 .footer .studio {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+
   color: var(--secondary-logo-footer-color);
 }

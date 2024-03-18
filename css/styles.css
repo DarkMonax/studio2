@@ -37,6 +37,10 @@ h6 {
   color: var(--primary-text-color);
 }
 
+a {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -81,8 +85,6 @@ p {
   line-height: 1.19;
 
   color: var(--primary-text-color);
-
-  text-decoration: none;
 }
 
 .contact a {
@@ -181,10 +183,8 @@ p {
   background-color: var(--accent-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contact a:hover,
-.contact a:focus,
+.link:hover,
+.link:focus,
 .site-nav .link.current {
   color: var(--accent-color);
 }
@@ -200,11 +200,13 @@ p {
 /* .footer-mail,
 .footer-tell  */
 
-.contact-footer > a {
+.footer-mail,
+.footer-tell {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
   color: var(--color-footer-mt);
 }
 .footer .studio {
@@ -215,4 +217,8 @@ p {
   line-height: 1.19;
 
   color: var(--secondary-logo-footer-color);
+}
+
+address {
+  font-style: normal;
 }
